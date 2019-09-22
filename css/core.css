@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: elliot, Arial, sans-serif;
+    font-size: 16px;
+    color: #1D1D1D;
+    overflow-wrap: break-word;
+}
+
+.conteiner {
+    max-width: 100%;
+    min-width: 320px;
+}
+
+
+.wrap { 
+    max-width: 1130px; 
+    min-width: 290px;
+    margin : 0 100px;   
+    display: block;
+   } 

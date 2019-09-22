@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "elliot-bold";
+  src: url("../fonts/elliotsans-bold-webfont.woff"),
+    url("../fonts/elliotsans-bold-webfont.woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "elliot-medium";
+  src: url("../fonts/elliotsans-medium-webfont.woff"),
+    url("../fonts/elliotsans-nedium-webfont.woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "elliot-regular";
+  src: url("../fonts/elliotsans-regular-webfont.woff"),
+    url("../fonts/elliotsans-regular-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,15 @@
+.header_logo {
+    
+    max-width: 200px;
+}
+
+.logo__link {
+    display: block;
+    
+
+}   
+
+.logo__img {
+    display: block;
+    max-width: 100%;
+}

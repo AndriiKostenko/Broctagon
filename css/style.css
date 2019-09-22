@@ -1,3 +1,15 @@
+@import url("fonts.css");
+@import url("core.css");
+@import url("blocks/header.css");
+@import url("blocks/logo.css");  
+@import url("blocks/menu.css");  
+@import url("blocks/content.css"); 
+@import url("blocks/services.css"); 
+@import url("blocks/solutions.css"); 
+@import url("blocks/offices.css"); 
+
+
+/* 
 
 * {
 	box-sizing: border-box;
@@ -60,7 +72,7 @@ header {
 
 .header_menu {
     /* list-style-type: none;
-    text-decoration: none; */
+    text-decoration: none; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,7 +84,7 @@ header {
 .header_menu li {
     /* display: block;
     list-style-type: none;
-    text-decoration: none; */
+    text-decoration: none; 
     margin: 0 30px; 
 }
 
@@ -131,4 +143,4 @@ header {
 .offices {
     max-width: 100%;
     height: 1010px;
-}
+} */

@@ -4,83 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Broctagon</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+    <body>
+    <div class="conteiner">
+        <header class="heder">
+            <div class="header__wrap wrap">
+                <div class="header_logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="img/logo.svg" alt="broctagon logo">
+                    </a>
+                </div>
 
-   <header>
+                <nav class="menu">
+                    <ul class="menu__list list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">liqudity</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">brokerage</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">blockchain</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">about us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                        
+                <a class="header_link" href="#">celebrating ten years</a> 
+            </div> 
+        </header>
+        
+        <main class="content">
+            <section class="presentation">
+                <div class="presentation__text">
+                    <h1>Powering Leading<br>FX Brokers Globally</h1> 
+                    <h4>Multi-Asset Liquidity</h4>
+                    <h4>Brokerage Technology Solutions</h4>
+                    <h4>Enterprise Blockchain Development</h4>
+                    
+                    <a class="presentation__link" href="#">speak to a specialist</a>
+                 </div>
+                
+            </section>
+            <section class="market_research">
 
-       <div class="header_logo">
-           <a href="#">
-               <img src="/Broctagon/img/logo.svg" alt="broctagon_logo">
-           </a>
-       </div>
+                <h2>Deep Institutional-Grade Liquidity on 1000+ Assets</h2>
+                <div class="nexus">Powered by NEXUS Aggregator Technology</div>
 
-        <ul class="header_menu">
-                <li class="header_menu_item"><a href="#">liqudity</a></li>
-                <li class="header_menu_item"><a href="#">brokerage</a></li>
-                <li class="header_menu_item"><a href="#">blockchain</a></li>
-                <li class="header_menu_item"><a href="#">blog</a></li>
-                <li class="header_menu_item"><a href="#">about us</a></li>
-                <li class="header_menu_item"><a href="#">contact</a></li>
-        </ul>
+                <div class="reserch_table"></div>
 
-        <a class="celebrating_link" href="#">celebrating ten years</a>
+                <p>*During off-market hours, spreads shown on FX, commodity, and indices products are reflective of 
+                        latest figures 1 hour before market close.
+                </p>
+                <button class="market_research__button" >Register for a demo account to view all products</button>
 
-   </header>
+            </section>
 
-   <section class="presentation">
-     <h1>Powering Leading<br>
-        FX Brokers Globally
-    </h1> 
+            <div class="services">
+                <h2>What Services Are You Looking For?</h2>
 
-     <h2>Multi-Asset Liquidity<br>
-        Brokerage Technology Solutions<br>
-        Enterprise Blockchain Development
-    </h2>
+                <div class="wrap">
 
-     <a href="#">speak to a specialist</a>
+                    <input class="radio-button" type="radio" title="liquidity" name="tabs-state" id="switch-1" checked />
+                    <input class="radio-button" type="radio" title="brokerage" name="tabs-state" id="switch-2" />
+                    <input class="radio-button" type="radio" title="blockchain" name="tabs-state" id="switch-3" />
+                           
 
-   </section>
-   <section class="market_research">
+                    <div class="tabs">
+                            <label for="switch-1" id="liquidity-label" class="tab">liquidity</label>
+                            <label for="switch-2" id="brokerage-label" class="tab">brokerage solutions</label>
+                            <label for="switch-3" id="blockchain-label" class="tab">blockchain solutions</label>
+                    </div>           
+<!-- liquidity cards -->
+                    <div id="liquidity" class="slide slide-1">
+                        <div class="liquidity__content content-card">
+                            <img src="img/Services/Liquid/forex-cfd-icon.png" alt="picture">
+                            <h6>Spot Forex</h6>
+                            <p>Trade in the Word's<br>Most Liquid Market</p>
+                        </div>
+                        <div class="liquidity__content content-card">
+                                            <img src="img/Services/Liquid/crypto-cfd-icon.png" alt="picture">
+                                            <h6>Digital Asset Derivatives</h6>
+                                            <p>MaximumExposure,<br>Minimum Risk</p>
+                        </div>
+                        <div class="liquidity__content content-card">
+                                            <img src="img/Services/Liquid/nexsus-agregator-icon.png" alt="picture">
+                                            <h6>Nexus Agregator<br>Technology</h6>
+                                            <p>A New Era of Global Liquidity</p>
+                        </div>
+                    </div>  
+<!-- brokerage cards -->
+                    <div id="brokerage" class="slide slide-2">
+                        <div class="brokerage__content content-card">
+                                            <img src="img/Services/Brokerege solutions/comp-brok-new-1.png" alt="picture">
+                                            <h6>Complete Brokerage Solutions</h6>
+                                            <p>A One-Stop<br>Brokerage Suite</p>
+                        </div>
+                        <div class="brokerage__content content-card">
+                                            <img src="img/Services/Brokerege solutions/trunk-sol-new-1.png" alt="picture">
+                                            <h6>MT4/5 Turnkey Solutions</h6>
+                                            <p>Trading Platforms<br> with Full Brokerage<br>Integration</p>
+                        </div>
+                        <div class="brokerage__content content-card">
+                                            <img src="img/Services/Brokerege solutions/crm-axs-icon-1.png" alt="picture">
+                                            <h6>Brokerage<br>CRM (AXIS)</h6>
+                                            <p>Streamlining Affiliate Expansion and Backend Operations</p>
+                        </div>
+                        <div class="brokerage__content content-card">
+                                            <img src="img/Services/Brokerege solutions/invst-port-icon-1.png" alt="picture">
+                                            <h6>Investment Tools</h6>
+                                            <p>Investing the<br>Smarter Way</p>
+                        </div>
+                        <div class="brokerage__content content-card">
+                                            <img src="img/Services/Brokerege solutions/ancl-icon-2.png" alt="picture">
+                                            <h6>Ancillary<br>Services</h6>
+                                            <p>Building the Backbone<br>of Your Brokerage</p>
+                        </div>
+                    </div> 
+                                        
+<!-- blockchain cards -->
+                    <div id="blockchain" class="slide slide-3">
+                        <div class="blockchain__content blockchain__content-small">
+                                                <img src="img/Services/BlockchainSolutions/crypto-expo-icon.png" alt="picture">
+                                                <h6>Digital Exchange Setup</h6>
+                                                <p>Building the Ideal<br>Exchange</p>
+                        </div>
+                        <div class="blockchain__content blockchain__content-two">
+                                                    <img src="img/Services/BlockchainSolutions/token-sale-logo.png" alt="picture">
+                                                    <h6>Token Sale Solutions</h6>
+                                                    <p>An Accelerator for Your<br>Token Sale Dreams</p>
+                        </div>                                            
+                        <div class="blockchain__content blockchain__content-three">
+                                                <img src="img/Services/BlockchainSolutions/blk-chn-solicon.png" alt="picture">
+                                                <h6>All Blockchain<br>Solutions</h6>
+                                                <p>Access the World’s Most<br>Disruptive Technology</p>
+                        </div>
+                        <div class="blockchain__content blockchain__content-small">
+                                                    <img src="img/Services/BlockchainSolutions/exchnage-seq-icon.png" alt="picture">
+                                                    <h6>Token Sale CRM</h6>
+                                                    <p>360° Token Sale Management</p>
+                        </div>
+                        <div class="blockchain__content blockchain__content-small">
+                                                    <img src="img/Services/BlockchainSolutions/smart-contact-dev.png" alt="picture">
+                                                    <h6>Enterprise Blockchain<br>Development</h6>
+                                                    <p>Powering the Blockchain</p>
+                        </div>
+                        <div class="blockchain__content blockchain__content-small">
+                                                <img src="img/Services/BlockchainSolutions/listing-service-icon.png" alt="picture">
+                                                <h6>Listing Services</h6>
+                                                <p>Optimizing Successful<br>Token Sale and Secondary Listings</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
 
-      <h2>Deep Institutional-Grade Liquidity on 1000+ Assets</h2>
-      <h3>Powered by NEXUS Aggregator Technology</h3>
+        <div class="solutions">
+            <div class="wrap">
+                <div class="solutions__content">
+                    <h3>We Forge the Perfect Blend of Fintech Success<br>Through Synergistic Solutions</h3>
+                    <p>Broctagon merges traditional finance with the innovations of blockchain technology,<br>
+                        offering complete forex solutions, end-to-end blockchain services, deep institutional liquidity,<br>
+                        as well as comprehensive system security testing and development.</p>
+                </div>        
+            </div>          
+        </div>
 
-      <div class="reserch_table"></div>
+        <div class="offices">
+            <div class="wrap">
+                <div class="offices__content">
+                    <h3>Our Global Offices</h3>
+                    <p>Creating a strong global presence is about more than bringing together people from all<br>
+                        over the world. It’s about reflecting a common ideal, a shared ambition to create tangible<br>
+                        and meaningful change. At Broctagon, we do just that.
+                    </p>
+                </div>
+                <div class="offices__presents">
+                    <div class="map">
+                        <img src="img/Offices/maps/sigapur-map.png" alt="">
 
-        <p>*During off-market hours, spreads shown on FX, commodity, and indices products are reflective of 
-            latest figures 1 hour before market close.
-        </p>
-        <a href="#">Register for a demo account to view all products</a>
+                    </div>
+                    <div class="country">
 
-   </section>
+                    </div>
+                </div>
 
-   <section class="services">
-       <h2>What Services Are You Looking For?</h2>
-       <ul class="services_list">
-           <li><a href="#">liqudity</a></li>
-           <li><a href="#">brokerage solutions</a></li>
-           <li><a href="#">blockchain solutions</a></li>
-       </ul>
-     
-   </section>
+            </div>         
+        </div> 
 
-   <section class="solutions">
-       <h2>We Forge the Perfect Blend of Fintech Success<br>
-            Through Synergistic Solutions</h2>
-       <p>Broctagon merges traditional finance with the innovations of blockchain technology,<br>
-            offering complete forex solutions, end-to-end blockchain services, deep institutional liquidity,<br>
-            as well as comprehensive system security testing and development.</p>
-
-
-   </section>
-
-   <section class="offices">
-
-   </section>
     
-    <link rel="stylesheet" href="script.js">
+    </main>  
+            <link rel="stylesheet" href="script.js">
+    </div>
 </body>
 </html>

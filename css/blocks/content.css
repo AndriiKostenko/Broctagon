@@ -1,0 +1,123 @@
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 530px;
+    background: url("../../img/home-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation__text{ 
+    display: block;
+    margin: 125px 0 115px 100px;
+    }
+
+.presentation__text h1 {
+    font-size: 43px;
+    color: #fff;
+    font-family: elliot-bold;
+    margin-bottom: 30px; 
+    } 
+
+.presentation__text h4 {
+    font-size: 23px;
+    color: #fff;
+    font-family: elliot-medium;
+    margin-bottom: 8px;
+    line-height: 1;
+}  
+
+.presentation__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 48px;
+    border: 1px solid #fff;
+    border-radius: 23px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.market_research {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+
+}
+
+.market_research h2 {
+    color: #444546;
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 25px;
+    text-align: center;
+}
+
+.nexus {
+
+    color: #444546;
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+
+.reserch_table {
+    display: block;
+    width: 1140px;
+    height: 375px;
+    background-color: grey;
+}
+
+.market_research p {
+    font-size: 15px;
+    text-align: left;
+    margin: 30px 0 25px;
+}
+
+.market_research__button {
+    display: block;
+    color: #C32027;
+    padding: 10px 48px;
+    border: 1px solid #C32027;
+    border-radius: 23px;
+    background-color: #fff;  
+    font-size: 15px;
+    font-family: elliot-bold; 
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+}
+
+.market_research__button:hover {
+    color: #fff;
+    background-color: #C32027;
+
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.services h2 {
+    color: #444546;
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 25px;
+    text-align: center;
+
+}
+
