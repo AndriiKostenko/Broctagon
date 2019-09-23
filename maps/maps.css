@@ -1,0 +1,48 @@
+.offices {
+  width: 100%;
+  height: 1010px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.offices__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.offices__content h3 {
+  text-align: center;
+}
+.offices__content p {
+  text-align: center;
+}
+
+.offices__presents {
+  display: flex;
+  flex-direction: row;
+}
+
+.map {
+  width: 70%;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+  /* display: none; */
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* #btn-1:onmouseover ~ #singapore {
+  display: block;
+}
+
+#btn-2:onmouseover ~ #hong-kong {
+  display: block;
+} */

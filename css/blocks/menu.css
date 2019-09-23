@@ -25,6 +25,13 @@
   
 }
 
+/* .menu__link:first-of-type {
+    padding: 0;
+} */
+
+
+
+
 .menu__link:hover, .menu__link:active, .menu__link:focus {
     background-color: #C32027;
 } 
@@ -39,8 +46,8 @@
     line-height: 66px;
     text-transform: uppercase;
     font-weight: 400;
-    text-align: right;
-    margin-left: 35px;
+    text-align: left;
+    /* margin-left: 35px; */
 
 }
 

@@ -18,9 +18,10 @@ body {
 }
 
 
-.wrap { 
+.wrap {
+    width: 100%; 
     max-width: 1130px; 
     min-width: 290px;
-    margin : 0 100px;   
+    margin : 0 auto;   
     display: block;
-   } 
+} 
