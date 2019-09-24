@@ -7,9 +7,13 @@ function changeMap(mapFileName, index) {
   for (var childIndex = 0; childIndex < countries.length; childIndex++) {
     if (index === childIndex) {
       countries[index].style.opacity = 1;
+      let image = countries[index].querySelector("img");
+      image.src = image.src.replace('flag-grey-icon','flag-icon');
       continue;
     }
     countries[childIndex].style.opacity = 0.5;
+    let image = countries[childIndex].querySelector("img");
+    image.src = image.src.replace('flag-icon','flag-grey-icon');
   }
 }
 
