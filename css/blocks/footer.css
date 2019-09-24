@@ -139,6 +139,14 @@ form input {
    
 }
 
+.form-item { 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* 
 #first-name {
     margin-bottom: 85px;
 }
@@ -155,7 +163,7 @@ form input {
 #company,
 #url {
     margin-bottom: 40px;
-}
+} */
 
 .submit-button {
     color: #fafafa;
