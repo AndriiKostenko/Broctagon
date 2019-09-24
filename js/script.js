@@ -17,9 +17,7 @@ function changeMap(mapFileName, index) {
   }
 }
 
-function handleContactFormSubmit(e) {
-  if (e.preventDefault) e.preventDefault();
-
+function handleContactFormSubmit() {
   let form = document.forms["contact_form"];
   let firstName = form.elements["first name"].value;
   let lastName = form.elements["last name"].value;
@@ -39,5 +37,5 @@ function handleContactFormSubmit(e) {
     "Service:" + service + "\n" +
     "Other Contacts:" + otherContacts
   );
-  return false;
+  form.reset();
 }
