@@ -199,40 +199,54 @@
             </div>
             <div class="countries">
                 <div class="country" onmouseover="changeMap('sigapur-map.png', 0)">
-                    <img class="flag" src="img/Offices/singapur-flag-icon.png"/>
-                    <label class="name">Singapore</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/singapur-flag-icon.png"/>
+                        <label class="name">Singapore</label>
+                    </div>
                     <p class="details">14 Robinson Road #06-01, Singapore 048545</p>
                 </div>
                 <div class="country" onmouseover="changeMap('hongkong-map.png', 1)">
-                    <img class="flag" src="img/Offices/hongkong-flag-icon.png"/>
-                    <label class="name">Hong Kong</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/hongkong-flag-icon.png"/>
+                        <label class="name">Hong Kong</label>
+                    </div>
                     <p class="details">Unit 1914, 19th Floor, Concordia Plaza, 1 Science Museum Road, TST, Kowloon,
                         HK</p>
                 </div>
                 <div class="country" onmouseover="changeMap('russia-map.png', 2)">
-                    <img class="flag" src="img/Offices/russia-flag-icon.png"/>
-                    <label class="name">Russia</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/russia-flag-icon.png"/>
+                        <label class="name">Russia</label>
+                    </div>
                     <p class="details">3rd Floor, Nevsky Prospect, 55, Saint Petersburg, 191025</p>
                 </div>
                 <div class="country" onmouseover="changeMap('cyprus-map.png', 3)">
-                    <img class="flag" src="img/Offices/cyprus-flag-icon.png"/>
-                    <label class="name">Cyprus</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/cyprus-flag-icon.png"/>
+                        <label class="name">Cyprus</label>
+                    </div> 
                     <p class="details">2 Christou Samara, 3rd Floor, 4001, Limassol, Cyprus</p>
                 </div>
                 <div class="country" onmouseover="changeMap('india-map.png', 4)">
-                    <img class="flag" src="img/Offices/india-flag-icon.png"/>
-                    <label class="name">India</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/india-flag-icon.png"/>
+                        <label class="name">India</label>
+                    </div>      
                     <p class="details">Awfis, The Corenthum 7th Floor,Tower B, Sector 62, Noida 201309</p>
                 </div>
                 <div class="country" onmouseover="changeMap('british-vergin-map.png', 5)">
-                    <img class="flag" src="img/Offices/british-vergin-flag-icon.png"/>
-                    <label class="name">British Virgin Islands</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/british-vergin-flag-icon.png"/>
+                        <label class="name">British Virgin Islands</label>
+                    </div>
                     <p class="details">Sea Meadow House, Blackburne Highway <br>(P.O. Box 116), Road Town, Tortola, BVI
                     </p>
                 </div>
                 <div class="country" onmouseover="changeMap('china-map.png', 6)">
-                    <img class="flag" src="img/Offices/chine-flag-icon.png"/>
-                    <label class="name">China</label>
+                    <div class="label-wrap">
+                        <img class="flag" src="img/Offices/chine-flag-icon.png"/>
+                        <label class="name">China</label>
+                    </div>
                     <p class="details">85th Floor, Ping An Finance Centre No. 5033 Yi Tian Road, Fu Tian District</p>
                 </div>
             </div>
@@ -314,25 +328,22 @@
         </div>
         <div class="footer__right">
             <form name="contact_form">
-                <div class="form-left">
+                
                     <div class="form-item">
                         <label for="first-name">First name<span>*</span></label>
                         <input id="first-name" name="first name" required type="text">
                     </div>
-                    <div class="form-item">
-                        <label for="Email">Email<span>*</span></label>
-                        <input id="email" name="emeil" required type="email">
-                    </div>
-                    <div class="form-item">
-                        <label for="company">Company</label>
-                        <input id="company" name="company" type="text">
-                    </div>
-                </div>
 
-                <div class="form-right">
                     <div class="form-item">
                         <label for="last-name">Last name<span>*</span></label>
                         <input id="last-name" name="last name" required type="text">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="Email">Email<span>*</span>
+                            <legend>&nbsp</legend>
+                        </label>
+                        <input id="email" name="emeil" required type="email">
                     </div>
 
                     <div class="form-item">
@@ -342,18 +353,34 @@
                         <input id="other-contact" name="other contact" type="text">
                     </div>
                     <div class="form-item">
+                        <label for="company">Company</label>
+                        <input id="company" name="company" type="text">
+                    </div>
+                    <div class="form-item">
                         <label for="url">Website URL</label>
                         <input id="url" name="url" type="text">
                     </div>
-                </div>
-                <div>
+              
+                <div class="form-item-long">
                     <label for="service">Type of service<span>*</span></label>
-                    <input class="form-service" id="service" name="service" type="text">
+                    <select class="form-select" id="service" name="service" type="text">
+                        <option disabled selected>Please Select</option>
+                        <option>Brokerage</option>   
+                        <option>Blockchain</option>   
+                        <option>Liquidity</option>                           
+                    </select>   
+                               
+                    <label for="textarea">How may we help you today?</label>
+                    <textarea></textarea>
+
+
+                    <div class="consent">
+                        <input type="checkbox" name="checkbox" value="check" id="agree" checked/> 
+                        <p>I agree to receive communications from Broctagon Fintech Group.<span>*</span></p>
+                    </div> 
+                    
+                    <button class="submit-button" type="button" onclick="handleContactFormSubmit()">Submit</button>
                 </div>
-                <textarea></textarea>
-
-                <button class="submit-button" type="button" onclick="handleContactFormSubmit()">Submit</button>
-
             </form>
         </div>
     </div>
