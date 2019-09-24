@@ -49,7 +49,17 @@
     width: 100%;
 }
 
-.country {
+.countries {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+label.name {
+    color: #1D1D1D;
+}
+
+.country {
+    opacity: 0.5;
 }
