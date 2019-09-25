@@ -44,7 +44,7 @@ footer {
 
 }
 
-.awards-list-item  {
+.awards-list-item {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ footer {
 
 }
 
-.social-media-item a{
+.social-media-item a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,8 +87,8 @@ footer {
     height: 40px;
     border-radius: 50%;
     background-color: #fff;
-   
-    
+
+
 }
 
 .social-media-item img {
@@ -100,7 +100,7 @@ footer {
     display: block;
     width: 218px;
     max-width: 218px;
-    margin-top: 15px;   
+    margin-top: 15px;
 }
 
 
@@ -116,12 +116,13 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
 }
-label{
-    color: #fff;   
+
+label {
+    color: #fff;
 }
 
-label span{
-    color: red;;   
+label span {
+    color: red;;
 }
 
 form input {
@@ -138,10 +139,10 @@ form input {
 }
 
 
-.form-item { 
+.form-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 18px;   
+    margin-bottom: 18px;
 }
 
 .form-item-long {
@@ -162,7 +163,7 @@ form input {
 
 .form-select option,
 .form-select option:disabled {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 22px;
@@ -185,7 +186,9 @@ textarea {
 
 .submit-button {
     color: #fafafa;
-    background-color: #ff6d1f;
+    background-color: rgb(163, 50, 24);
+    max-width: 20%;
+    min-height: 15%;
 }
 
 #agree {
