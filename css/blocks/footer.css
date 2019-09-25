@@ -90,6 +90,11 @@ footer p {
   height: 25px;
 }
 
+.aws-partner {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .amazon-img {
   display: block;
   width: 218px;
@@ -216,5 +221,48 @@ textarea {
   height: 13px;
   margin: 5px 5px 3px 0;
   background-color: #f5f8fa;
-  cursor: pointer; 
+  cursor: pointer;
 }
+
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footer_logo {
+  display: block;
+  width: 250px;
+  height: 50px;
+}
+
+.footer_logo img {
+  width: 100%;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  width: 785px;
+  height: auto;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+
+.footer__menu-link {
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;   
+    display: block;
+    width: auto;
+    height: 100%;
+    padding: 0 15px;
+}
+
