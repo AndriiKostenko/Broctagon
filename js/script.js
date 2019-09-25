@@ -39,3 +39,38 @@ function handleContactFormSubmit() {
   );
   form.reset();
 }
+
+function refreshResearchTable() {
+
+  fetch('https://webapi.mt4.space:8443/price/all')
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      updateTable(data);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+}
+
+function findCurrencyData(data, currency) {
+  return data.find(function (element) {
+    return element["Symbol"].includes(currency);
+  });
+}
+
+function updateTable(data) {
+  let table = document.querySelector(".reserch_table");
+  let rows = table.querySelectorAll(".table_row.data");
+
+  for (let i = 0; i < rows.length; i++) {
+    let currentRow = rows[i];
+    let currencyData = findCurrencyData(data, currentRow.children[1].innerText);
+    currentRow.children[2].innerText = currencyData.Spread;
+    currentRow.children[3].innerText = currencyData.Bid;
+    currentRow.children[4].innerText = currencyData.Ask;
+  }
+}
+
+setInterval(refreshResearchTable, 100);

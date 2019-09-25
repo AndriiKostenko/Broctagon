@@ -76,10 +76,27 @@
 
 
 .reserch_table {
-    display: block;
-    width: 1140px;
-    height: 375px;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.table_cell {
+    width: 20%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0.8em 1.2em;
+    overflow: hidden; // Or flex might break
+    list-style: none;
+}
+
+.table_cell:first-child {
+    width: 50%;
 }
 
 .market_research p {
