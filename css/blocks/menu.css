@@ -1,7 +1,7 @@
 .menu__list {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+   
 
 }
 
@@ -16,7 +16,6 @@
 
 
 .menu__link {
-    text-decoration: none;
     color: #444546;
     display: block;
     width: auto;
@@ -39,7 +38,6 @@
 
 .header_link {
     display: inline-block;
-    text-decoration: none;
     color: #C99836;
     font-style: italic; 
     font-size: 14px;
