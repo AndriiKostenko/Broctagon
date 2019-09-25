@@ -119,6 +119,11 @@ form {
 
 label {
     color: #fff;
+    font-size: 13px;
+}
+
+label legend {
+    font-size: 11px;
 }
 
 label span {
@@ -183,6 +188,10 @@ textarea {
     justify-content: flex-start;
 }
 
+.white-text {
+    color: rgb(229, 229, 229);
+    font-size: 14px;
+}
 
 .submit-button {
     color: #fafafa;
