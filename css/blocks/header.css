@@ -27,5 +27,6 @@ header {
 .headhesive--stick {
     transform: translateY(0); 
     box-shadow: -4px 1px 15px 0 #ccc; 
+    z-index: 999;
 }
 
