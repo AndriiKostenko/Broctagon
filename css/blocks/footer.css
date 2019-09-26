@@ -1,12 +1,12 @@
 footer {
   max-width: 100%;
-  height: 930px;
+  height: auto;
   background: url("../../img/footer-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 55px 0;
+  padding-top: 55px;
 }
 
 .footer__wrap {
@@ -227,29 +227,33 @@ textarea {
 .footer__bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
-  margin-top: 60px;
+  margin: 60px 0 60px;
+}
+
+.footer__bottom-left {
+  width: auto;
+  height: auto;  
 }
 
 .footer__logo {
-  display: block;
-  width: 24%;
-  height: 50px;
+  width: 250px;
+  height: auto;
+  margin-right: 105px;
 }
 
-.footer__logo img {
-  width: 100%;
-  height: 100%;
+.footer__bottom-right {
+  display: flex;
+  flex-direction: column; 
+  width: 70%;
+  height: auto;
 }
  
 .footer__menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-end;
-  width: 76%;
   height: auto;
 }
 
@@ -257,21 +261,8 @@ textarea {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin: 0;
+  justify-content: space-between;
   padding: 0;
-  
-}
-
-.footer__menu-item {
-  margin-right: 2%;
-  white-space: nowrap;
-}
-
-.footer__menu-item:last-child {
-  margin-right: 0;
-
 }
 
 .footer__menu-link {
@@ -284,18 +275,15 @@ textarea {
   
 }
 
-.privat-policy {
+.private-policy {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
+  padding-top: 15px;
+  border-top: 1px solid #ffffff4d;
 }
 
 
 
-.privat-policy a {
-  margin-left: 105px;
+.private-policy a {
   font-family: elliot-regular;
   font-size: 13px;
   color: #fff;
