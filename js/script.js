@@ -1,3 +1,10 @@
+//heder fixed 
+var header = new Headhesive('.header', options);
+var options = {
+  offset: 1
+}
+
+// maps change
 let countries = document.querySelectorAll(".country");
 
 function changeMap(mapFileName, index) {
