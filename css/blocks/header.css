@@ -1,6 +1,9 @@
 header {
     background-color: #fff;
     width: 100%;
+    position: relative;
+   
+   
     
    
 
@@ -21,8 +24,8 @@ header {
     position: fixed;
     box-shadow: -4px 1px 15px 0 #ccc; 
     z-index: 999;
-    transition-timing-function: ease; 
-    transition: 1s; 
+   
+    transition: all 1s ease; 
     transform: translateY(0);  
 
 }

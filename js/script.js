@@ -1,9 +1,25 @@
 // header fixed 
-$(window).scroll(function() {
-  var top = $(document).scrollTop();
-  if (top > 100)$(".header").addClass('fixed');
-  else $(".header").removeClass('fixed');
-});
+window.onscroll = function() {fixedHeader()}; 
+
+let sticky = window.pageYOffset;
+let header = document.querySelector('.header');
+
+function fixedHeader() {
+  if (window.pageYOffset >= 1) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+  }
+}
+
+
+
+
+// window.scroll(function() {
+//   var top = $(document).scrollTop();
+//   if (top > 100)$(".header").addClass('fixed');
+//   else $(".header").removeClass('fixed');
+// });
 
 // maps change
 let countries = document.querySelectorAll(".country");
