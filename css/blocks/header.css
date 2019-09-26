@@ -16,17 +16,14 @@ header {
  
 }
 
-
-.headhesive {
+.fixed{
     width: 100%;
- position: fixed;
- transform: translateY(-100%);  
- transition: 0.5s;     
-}
-
-.headhesive--stick {
-    transform: translateY(0); 
+    position: fixed;
     box-shadow: -4px 1px 15px 0 #ccc; 
     z-index: 999;
+    transition-timing-function: ease; 
+    transition: 1s; 
+    transform: translateY(0);  
+
 }
 

@@ -1,8 +1,9 @@
-//heder fixed 
-var header = new Headhesive('.header', options);
-var options = {
-  offset: 1
-}
+// header fixed 
+$(window).scroll(function() {
+  var top = $(document).scrollTop();
+  if (top > 100)$(".header").addClass('fixed');
+  else $(".header").removeClass('fixed');
+});
 
 // maps change
 let countries = document.querySelectorAll(".country");
