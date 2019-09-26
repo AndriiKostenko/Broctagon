@@ -12,16 +12,8 @@ function fixedHeader() {
   }
 }
 
+//changing maps
 
-
-
-// window.scroll(function() {
-//   var top = $(document).scrollTop();
-//   if (top > 100)$(".header").addClass('fixed');
-//   else $(".header").removeClass('fixed');
-// });
-
-// maps change
 let countries = document.querySelectorAll(".country");
 
 function changeMap(mapFileName, index) {
