@@ -1,5 +1,7 @@
 // header fixed 
-window.onscroll = function() {fixedHeader()}; 
+window.onscroll = function () {
+  fixedHeader()
+};
 
 let sticky = window.pageYOffset;
 let header = document.querySelector('.header');
@@ -22,14 +24,22 @@ function changeMap(mapFileName, index) {
 
   for (var childIndex = 0; childIndex < countries.length; childIndex++) {
     if (index === childIndex) {
-      countries[index].style.opacity = 1;
-      let image = countries[index].querySelector("img");
+      countries[childIndex].style.opacity = 1;
+      let image = countries[childIndex].querySelector("img");
       image.src = image.src.replace('flag-grey-icon', 'flag-icon');
-      continue;
+      let details = countries[childIndex].querySelector(".details");
+      details.style.display = "block";
+      let name = countries[childIndex].querySelector(".name");
+      name.style.backgroundColor = "#C32027";
+    } else {
+      countries[childIndex].style.opacity = 0.5;
+      let image = countries[childIndex].querySelector("img");
+      image.src = image.src.replace('flag-icon', 'flag-grey-icon');
+      let details = countries[childIndex].querySelector(".details");
+      details.style.display = "none";
+      let name = countries[childIndex].querySelector(".name");
+      name.style.backgroundColor = "#dbdcdc";
     }
-    countries[childIndex].style.opacity = 0.5;
-    let image = countries[childIndex].querySelector("img");
-    image.src = image.src.replace('flag-icon', 'flag-grey-icon');
   }
 }
 
@@ -114,37 +124,37 @@ function getMockData() {
       "Ask": (Math.random() * 1000).toFixed(3),
       "Bid": (Math.random() * 1000).toFixed(3),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"USDJPY.ecn"
+      "Symbol": "USDJPY.ecn"
     },
     {
       "Ask": (Math.random() * 10000).toFixed(3),
       "Bid": (Math.random() * 10000).toFixed(3),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"BTCUSD.nx"
+      "Symbol": "BTCUSD.nx"
     },
     {
       "Ask": (Math.random() * 1000).toFixed(3),
       "Bid": (Math.random() * 1000).toFixed(3),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"ETHUSD.nx"
+      "Symbol": "ETHUSD.nx"
     },
     {
       "Ask": (Math.random() + 1).toFixed(5),
       "Bid": (Math.random() + 1).toFixed(5),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"XRPUSD.nx"
+      "Symbol": "XRPUSD.nx"
     },
     {
       "Ask": (Math.random() * 10000).toFixed(3),
       "Bid": (Math.random() * 10000).toFixed(3),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"XAUUSD.ecn"
+      "Symbol": "XAUUSD.ecn"
     },
     {
       "Ask": (Math.random() * 10000).toFixed(3),
       "Bid": (Math.random() * 10000).toFixed(3),
       "Spread": (Math.random()).toFixed(2),
-      "Symbol":"NACUSD.c"
+      "Symbol": "NACUSD.c"
     },
   ]
 }
