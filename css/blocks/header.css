@@ -3,11 +3,10 @@ header {
     width: 100%;
     position: relative;
    
-   
-    
-   
 
 }
+
+
 
 .header__wrap{
     width: 100%;   
@@ -19,14 +18,18 @@ header {
  
 }
 
+.header{ 
+position: sticky;
+top: -60px;
+
+}
+
 .fixed{
     width: 100%;
     position: fixed;
     box-shadow: -4px 1px 15px 0 #ccc; 
     z-index: 999;
-   
     transition: all 1s ease; 
-    transform: translateY(0);  
-
+    transform: translateY(60px);  
 }
 
