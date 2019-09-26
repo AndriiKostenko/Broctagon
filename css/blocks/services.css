@@ -47,7 +47,8 @@
     color: #444546;
 }
 
-.tab:hover {
+.tab:hover,
+.tab:visited {
     cursor: pointer;
     border-bottom: 3px solid #C32027;
 }
