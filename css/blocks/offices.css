@@ -32,6 +32,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 75px;
 
 
 }
@@ -53,14 +54,14 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-end;
 }
 
 label.name {
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    background-color: #C32027;
+    background-color: #dbdcdc;
     width: 235px;
     height: 37px;
     margin-left: 7px;
@@ -70,14 +71,19 @@ label.name {
     
 }
 
-.country {
-    opacity: 0.5;
-    width: 300px;
-    height: 108px;
-    /* display: flex;
-    flex-direction: row;
-    width: 100%; */
+.country:hover label.name {
+    background-color: #C32027;
+} 
 
+
+.country {
+    
+    opacity: 0.5;
+    max-width: 300px;
+    height: 108px;
+     display: flex;
+     flex-direction: column;
+    ;
 }
 
 .label-wrap {
@@ -92,11 +98,20 @@ label.name {
 }
 
 
+.country:hover > .details {
+    display: block;
+    
+   
+}
+
 .details {
     font-family: elliot-regular;
     font-size: 15px;
     color: #1d1d1d;
     padding: 0 0 0 14px;
     border-left: 3px solid #C32027;
-    margin-top: 12px;    
+    margin-top: 12px;
+    /* transition: 1s;    */
+    display: none; 
+    /* transform: translateY(30px); */
 }
