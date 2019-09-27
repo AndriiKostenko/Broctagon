@@ -37,6 +37,7 @@ footer p {
 }
 
 .awards-list {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -63,6 +64,7 @@ footer p {
 }
 
 .social-media-list {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 35px;
@@ -96,6 +98,7 @@ footer p {
 }
 
 .amazon-img {
+  max-width: 100%;
   display: block;
   width: 218px;
   max-width: 218px;
@@ -103,6 +106,7 @@ footer p {
 }
 
 .footer__right {
+
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -111,6 +115,7 @@ footer p {
 
 /* -------------------FORM------------------ */
 form {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -124,6 +129,7 @@ footer span {
 }
 
 form input {
+  max-width: 100%;
   width: 205px;
   height: 40px;
   margin: 10px 30px 0 0;
@@ -134,7 +140,8 @@ form input {
 #last-name,
 #other-contact,
 #url {
-  width: 225px;
+  max-width: 100%;
+  min-width: 225px;
   margin-right: 0;
 }
 
@@ -163,6 +170,7 @@ form legend {
 }
 
 .form-select {
+  max-width: 100%;
   width: 460px;
   height: 40px;
   border-radius: 3px;
@@ -181,6 +189,7 @@ form legend {
 }
 
 textarea {
+  max-width: 100%;
   width: 460px;
   height: 40px;
   background-color: #fff;
@@ -188,6 +197,7 @@ textarea {
 }
 
 .consent {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -205,6 +215,7 @@ textarea {
 }
 
 .submit-button {
+  max-width: 100%;
   width: 90px;
   height: 40px;
   color: #fafafa;
@@ -228,22 +239,25 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 100%;
   margin: 60px 0 60px;
 }
 
 .footer__bottom-left {
+  max-width: 100%;
   width: auto;
   height: auto;  
 }
 
 .footer__logo {
+  max-width: 100%;
   width: 250px;
   height: auto;
   margin-right: 105px;
 }
 
 .footer__bottom-right {
+  
   display: flex;
   flex-direction: column; 
   width: 70%;
@@ -251,6 +265,7 @@ textarea {
 }
  
 .footer__menu {
+  /* max-width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -258,7 +273,7 @@ textarea {
 }
 
 .footer__menu-list {
-  width: 100%;
+  /* max-width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -266,6 +281,7 @@ textarea {
 }
 
 .footer__menu-link {
+  display: block;
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
@@ -276,7 +292,7 @@ textarea {
 }
 
 .private-policy {
-  width: 100%;
+  max-width: 100%;
   padding-top: 15px;
   border-top: 1px solid #ffffff4d;
 }
@@ -293,7 +309,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   height: 50px;
   background-color: #000;
 }

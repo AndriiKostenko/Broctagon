@@ -33,3 +33,17 @@ top: -60px;
     transform: translateY(60px);  
 }
 
+@media screen and (max-width: 1125px){
+    .header__wrap {
+        flex-direction: row;
+        justify-content: space-around;
+} 
+}
+
+@media screen and (max-width: 990px) {
+    .header__wrap {
+    display: flex;
+    flex-direction: column;
+
+}
+}

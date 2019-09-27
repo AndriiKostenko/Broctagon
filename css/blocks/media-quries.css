@@ -1,0 +1,273 @@
+@media only screen and (max-width: 992px){
+    .wrap {
+        max-width: 760px;
+    }
+
+
+    .content-card {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+      
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .brokerage__content {
+        display: flex;
+        max-width: 200px;
+        width: 100%;
+        
+    }
+
+    .content-card img {
+        width: 90px;
+        height: auto;
+        margin: 40px auto 35px; 
+
+    }
+
+    .content-card h6 {
+        font-size: 19px;
+    }
+
+    .content-card p {
+        font-size: 14px;
+    }
+
+    
+    .blockchain__content-two,
+    .blockchain__content-three h6{
+        font-size: 19px;
+        
+    }
+
+    .blockchain__content-two,
+    .blockchain__content-three p{
+        font-size: 14px;
+        }
+
+    .blockchain__content h6 {
+        font-size: 16px;
+    }
+
+    .blockchain__content p {
+        font-size: 13px;
+    }
+
+
+
+    /* .offices_presents {
+        flex-direction: ;
+    } */
+
+    .map {
+        display: none;
+    }
+
+    .countries {
+       width: 100%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+
+    body h3 {
+        font-size: 24px;
+    }
+}
+
+
+
+        @media only screen and (max-width: 768px){
+    
+     
+    h3 {
+        font-size: 21px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    .wrap {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .presentation__text {
+        text-align: center;
+    }
+
+    .presentation__text h1 {
+        font-size: 30px;
+
+    }
+
+    .presentation__text p {
+        font-size: 23px;
+    }
+
+    .presentation__link {
+        font-size: 13px;
+        padding: 10px 20px;
+        margin-top: 10px;
+
+    }
+   
+    .liquidity__content, 
+    .content-card,
+    .brokerage__content,
+    .blockchain__content,
+    .blockchain__content-small  {
+        display: flex;
+        max-width: 100%;
+        width: 710px;
+        height: 250px;  
+        border: 2px solid #C32027;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .content-card {
+      
+        display: none;
+        
+    }
+
+    .slide-3 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .blockchain__content-small img {
+        margin: 5px auto;
+    }
+
+    .blockchain__content h6 {
+        font-size: 16px;
+    }
+    .blockchain__content p {
+        font-size: 12px;
+    }
+
+        
+    #switch-1:checked ~ .slide-1 {
+        display: flex;
+        flex-direction: column;
+      }
+    
+    #switch-2:checked ~ .slide-2 {
+        display: flex;
+        flex-direction: column;
+      } 
+    
+    
+    #switch-3:checked ~ .slide-3 {
+        display: flex;
+        flex-direction: column;
+      } 
+
+    .countries {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .country {
+       max-width: 100%;
+      }
+      
+      label .name {
+          width: 100%;
+      }
+
+      .details {
+          display: block;
+      }
+
+     .footer {
+         flex-direction: column;
+     } 
+     .footer__left,
+     .footer__right,
+     .footer__bottom-right,
+     .footer__bottom-left {
+         width: 100%;
+         justify-content: center;
+         margin: 0;
+         padding: 0;
+     }
+
+     .footer__left h3, 
+     .footer__left p {
+         text-align: center;
+       
+     } 
+     .footer__left h3{
+        font-size: 21px;
+     }
+
+     .footer__left p {
+        font-size: 15px;
+    }
+
+    .awards-list,
+    .social-media-list {
+        justify-content: center;
+    }
+
+    .amazon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+   
+    form, 
+    .form-item-long {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer__menu,
+    .footer__menu-list {
+        width: 100%;
+    }
+
+    .footer__menu-link {
+        color: #fff;
+        font-size: 14px;
+        border-right: 1px solid #fff;
+        padding-right: 10px;
+        margin-right: 10px;
+        line-height: 1;
+    }
+
+    .footer__menu-item:nth-child(2n) a {
+        border-right: none;  
+    }
+    
+    .footer__menu-item:last-child a {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+
+    }
+}
+   

@@ -13,3 +13,11 @@
     display: block;
     max-width: 100%;
 }
+
+
+@media screen and (min-width: 990px) and (max-width: 1125px) {
+    .header_logo {
+        max-width: 150px;
+        margin: 0;
+    }
+}

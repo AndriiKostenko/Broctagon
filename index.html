@@ -6,6 +6,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Broctagon</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/blocks/media-quries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
@@ -112,6 +113,10 @@
             </nav>
 
             <a class="header_link" href="#">celebrating ten years</a>
+
+            <div class="btn-menu">
+                <span></span>   
+            </div>
         </div>
     </header>
 
@@ -220,13 +225,13 @@
         <input checked class="radio-button" id="switch-1" name="tabs-state" title="liquidity" type="radio"/>
         <input class="radio-button" id="switch-2" name="tabs-state" title="brokerage" type="radio"/>
         <input class="radio-button" id="switch-3" name="tabs-state" title="blockchain" type="radio"/>
-
-
+        
         <div class="tabs">
             <label class="tab" for="switch-1" id="liquidity-label">liquidity</label>
             <label class="tab" for="switch-2" id="brokerage-label">brokerage solutions</label>
             <label class="tab" for="switch-3" id="blockchain-label">blockchain solutions</label>
         </div>
+        
         <!-- liquidity cards -->
         <div class="slide slide-1" id="liquidity">
             <div class="liquidity__content content-card">
@@ -461,7 +466,10 @@
 
             <p class="aws-partner">Broctagon is a partner in the AWS network</p>
 
-            <img alt="picture" class="amazon-img" src="img/aws-nw-logo.png">
+            <div class="amazon">
+                <img alt="picture" class="amazon-img" src="img/aws-nw-logo.png">
+            </div>
+            
 
 
         </div>

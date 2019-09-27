@@ -14,6 +14,8 @@ function fixedHeader() {
   }
 }
 
+
+
 //changing maps
 
 let countries = document.querySelectorAll(".country");
