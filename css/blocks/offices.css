@@ -1,16 +1,16 @@
 .offices { 
     width: 100%;
-    height: 1015px;
+    height: auto;
+    max-height: 1015px;
     display: flex;
     flex-direction: column;
 
 }
 
 .offices__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 75px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 75px;
 }
 
 .offices__content h3 {
@@ -33,6 +33,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 
 }
@@ -62,7 +63,8 @@ label.name {
     color: #fff;
     text-transform: uppercase;
     background-color: #dbdcdc;
-    width: 235px;
+    min-width: 235px;
+    max-width: 100%;
     height: 37px;
     margin-left: 7px;
     padding: 9px 0 0 15px;
@@ -73,16 +75,19 @@ label.name {
 
 .country {
     opacity: 0.5;
-    max-width: 300px;
+    width: 100%;
+    min-width: 300px;
     height: 108px;
     display: flex;
     flex-direction: column;
+    padding-left: 35px;
 }
 
 .label-wrap {
     display: flex;
     flex-direction: row;
-    width: auto;   
+    width: 100%;
+    min-width: 300px;   
     height: 37px;
 }
 
@@ -92,6 +97,7 @@ label.name {
 
 
 .details {
+    display: block;
     font-family: elliot-regular;
     font-size: 15px;
     color: #1d1d1d;
@@ -102,4 +108,5 @@ label.name {
     /* transition: 1s;    */
     display: none;
     /* transform: translateY(30px); */
+   
 }

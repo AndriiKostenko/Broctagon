@@ -75,8 +75,17 @@
 }
 
 
+.table__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .reserch_table {
     max-width: 1140px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -84,9 +93,6 @@
     font-family: elliot-regular;
     font-size: 14px;
     color: #1d1d1d;
-  
-    
-
 }
 
 .t-header div {
@@ -140,7 +146,7 @@
 }
 
 .market_research__button {
-    display: block;
+    display: flex;
     color: #C32027;
     padding: 10px 48px;
     border: 1px solid #C32027;
@@ -161,6 +167,9 @@
 }
 
 .notice {
-    width: 100%;
+    max-width: 100%;
 }
+
+
+
 

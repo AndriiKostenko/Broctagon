@@ -12,15 +12,18 @@
 }
 
 .solutions__content {
-    display: flex;
-    flex-direction: column;
+   
+    text-align: center;
     color: #fff;
     font-family: elliot-medium;
+    width: 60%;
+    margin: 0 auto;
     
     
 }
 
 .solutions__content h3 {
+   
     font-size: 27px;
     font-family: elliot-medium;
     margin-bottom: 17px;
@@ -31,4 +34,6 @@
     font-size: 16px;
     font-family: elliot-regular;
     text-align: center;
+    font-weight: 500;
+  
 }
