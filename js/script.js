@@ -21,7 +21,7 @@ function fixedHeader() {
 let countries = document.querySelectorAll(".country");
 
 function changeMap(mapFileName, index) {
-  console.log(mapFileName);
+  if (window.outerWidth < 1125) return;
   document.querySelector(".map img").src = './img/Offices/maps/' + mapFileName;
 
   for (var childIndex = 0; childIndex < countries.length; childIndex++) {
