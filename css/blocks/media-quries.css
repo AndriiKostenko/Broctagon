@@ -315,19 +315,31 @@
 
     /* -------------SERVICES BLOCK---------------------- */
 
+
+    .slide {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+    }
   
     .liquidity__content, 
     .content-card,
     .brokerage__content,
     .blockchain__content,
-    .blockchain__content-small  {
+    .blockchain__content-small,
+    .blockchain__content-two,
+    .blockchain__content-thre {
         display: flex;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 90%;
         width: 710px;
         height: 250px;  
         border: 2px solid #C32027;
         align-items: center;
         background-color: #fff;
+        margin-bottom: 20px;
     }
 
     .content-card {
@@ -336,21 +348,32 @@
         
     }
 
+    .content-card img,
+    .blockchain__content-two img,
+    .blockchain__content-three img {
+        margin: 25px auto;
+    } 
+
+
     .slide-3 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         
     }
 
-    .blockchain__content-small img {
+    /* .blockchain__content-small img,
+    .blockchain__content-two img,
+    .blockchain__content-thre {
         margin: 5px auto;
-    }
+    } */
 
     .blockchain__content h6 {
-        font-size: 16px;
+        font-size: 18px;
+        margin: 15px 0;
     }
     .blockchain__content p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
         
@@ -369,6 +392,9 @@
         display: flex;
         flex-direction: column;
       } 
+
+
+      /*---------------OFFICES-------------  */
 
     .countries {
         width: 100%;
