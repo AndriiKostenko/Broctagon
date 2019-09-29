@@ -16,15 +16,9 @@
         padding: 0 10px;
     }
 
-    /* form input {
-        width: 250px;
-        margin-right: 0px;
-       
+    .footer__menu-link {
+        font-size: 13px;
     }
-
-    .form-item {
-        width: 250px;
-    } */
 
 
 
@@ -162,6 +156,23 @@
 
    .menu__item:hover::after {
     content: none;
+   }
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__bottom-right,
+    .footer__menu,
+    .footer__menu-list {
+       width: 100%;
+      
+       align-items: flex-start;
+    }
+
+    .footer__menu-list li {
+        width: auto;
+    }
   
   
   
@@ -614,5 +625,4 @@
         width: 225px;
     }
 
-}
 }
