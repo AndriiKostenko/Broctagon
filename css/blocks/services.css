@@ -44,6 +44,7 @@
     font-size: 20px;
     text-transform: uppercase;
     color: #444546;
+    border-bottom: 3px solid transparent;
 }
 
 .tab:hover {

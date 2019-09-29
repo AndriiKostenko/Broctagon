@@ -17,20 +17,27 @@ function showTabName(event){
     let tabContent = document.getElementsByClassName('slide');
    
         for (let i = 0; i < tabContent.length; i++) {
-            if (dataTab == i) {
-                tabContent[i].style.display = "flex";
-            } else {
-                tabContent[i].style.display = "none";
-            }
+            // tabContent[i].classList.add('show');          
+            if (dataTab !== i) {
+                // console.log(tabContent[i]);
+                tabContent[i].classList.add('show');
+            } else { 
+            tabContent[i].classList.add('hide');
         }
+
+        
  
 }
 }
 
 }
+}
 
 
-
+// tabContent[i].classList.add('show');
+// } else {
+//     tabContent[i].classList.add('hide');  
+// }
 
 // let tabs = document.querySelector(".tabs");
 // let tab = document.querySelector(".tab"); 

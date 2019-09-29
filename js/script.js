@@ -1,9 +1,9 @@
 // mobile menu button
-document.querySelector('.btn-menu').addEventListener('click', function(e) {
-  e.preventDefault();
-  this.classList.toggle('active');
-}
-)
+// document.querySelector('.btn-menu').addEventListener('click', function(e) {
+//   e.preventDefault();
+//   this.classList.toggle('active');
+// }
+// )
 
 
 
