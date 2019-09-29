@@ -13,97 +13,104 @@
         <h3>What Services Are You Looking For?</h3>
             
                         
-            <div id = "tabs">
-                <div class="tab-title tab-active" onclick="showTabName(slide-1, 0)">liquidity</div>
-                <div class="tab-title" onclick="showTabName(slide-2, 1)">brokerage solutions</div>
-                <div class="tab-title" onclick="showTabName(slide-3, 2)">blockchain solutions</div>
+            <div class = "tabs">
+                <div class="tab-title active-tab" data-tab="0">liquidity</div>
+                <div class="tab-title" data-tab="1">brokerage solutions</div>
+                <div class="tab-title" data-tab="2">blockchain solutions</div>
             </div>
 
             <div class="tab-content">
             
-            <!-- liquidity cards -->
-            <div class= "slide slide-1">
-                <div class="liquidity__content content-card">
-                    <img alt="picture" src="img/Services/Liquid/forex-cfd-icon.png">
-                    <h6>Spot Forex</h6>
-                    <p>Trade in the Word's<br>Most Liquid Market</p>
-                </div>
-                <div class="liquidity__content content-card">
-                    <img alt="picture" src="img/Services/Liquid/crypto-cfd-icon.png">
-                    <h6>Digital Asset Derivatives</h6>
-                    <p>MaximumExposure,<br>Minimum Risk</p>
-                </div>
-                <div class="liquidity__content content-card">
-                    <img alt="picture" src="img/Services/Liquid/nexsus-agregator-icon.png">
-                    <h6>Nexus Agregator<br>Technology</h6>
-                    <p>A New Era of Global Liquidity</p>
-                </div>
-            </div>
+             <!-- liquidity cards -->
+                <div class= "slide liquidity-slide">
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Liquid/forex-cfd-icon.png">
+                        <h6>Spot Forex</h6>
+                        <p>Trade in the Word's<br>Most Liquid Market</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Liquid/crypto-cfd-icon.png">
+                        <h6>Digital Asset Derivatives</h6>
+                        <p>MaximumExposure,<br>Minimum Risk</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Liquid/nexsus-agregator-icon.png">
+                        <div class="card-info"></div>   
+                            <h6>Nexus Agregator<br>Technology</h6>
+                            <p>A New Era of Global Liquidity</p>
+                        </div>
+                    </div>
+                
 
-            <!-- brokerage cards -->
-            <div class="slide slide-2" id="brokerage">
-                <div class="brokerage__content content-card">
-                    <img alt="picture" src="img/Services/Brokerege solutions/comp-brok-new-1.png">
-                    <h6>Complete Brokerage Solutions</h6>
-                    <p>A One-Stop<br>Brokerage Suite</p>
+                <!-- brokerage cards -->
+                <div class="slide brokerage-slide">
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Brokerege solutions/comp-brok-new-1.png">
+                        <h6>Complete Brokerage Solutions</h6>
+                        <p>A One-Stop<br>Brokerage Suite</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Brokerege solutions/trunk-sol-new-1.png">
+                        <h6>MT4/5 Turnkey Solutions</h6>
+                        <p>Trading Platforms<br> with Full Brokerage<br>Integration</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Brokerege solutions/crm-axs-icon-1.png">
+                        <h6>Brokerage<br>CRM (AXIS)</h6>
+                        <p>Streamlining Affiliate Expansion and Backend Operations</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Brokerege solutions/invst-port-icon-1.png">
+                        <h6>Investment Tools</h6>
+                        <p>Investing the<br>Smarter Way</p>
+                    </div>
+                    <div class="content-card">
+                        <img alt="picture" src="img/Services/Brokerege solutions/ancl-icon-2.png">
+                        <h6>Ancillary<br>Services</h6>
+                        <p>Building the Backbone<br>of Your Brokerage</p>
+                    </div>
                 </div>
-                <div class="brokerage__content content-card">
-                    <img alt="picture" src="img/Services/Brokerege solutions/trunk-sol-new-1.png">
-                    <h6>MT4/5 Turnkey Solutions</h6>
-                    <p>Trading Platforms<br> with Full Brokerage<br>Integration</p>
-                </div>
-                <div class="brokerage__content content-card">
-                    <img alt="picture" src="img/Services/Brokerege solutions/crm-axs-icon-1.png">
-                    <h6>Brokerage<br>CRM (AXIS)</h6>
-                    <p>Streamlining Affiliate Expansion and Backend Operations</p>
-                </div>
-                <div class="brokerage__content content-card">
-                    <img alt="picture" src="img/Services/Brokerege solutions/invst-port-icon-1.png">
-                    <h6>Investment Tools</h6>
-                    <p>Investing the<br>Smarter Way</p>
-                </div>
-                <div class="brokerage__content content-card">
-                    <img alt="picture" src="img/Services/Brokerege solutions/ancl-icon-2.png">
-                    <h6>Ancillary<br>Services</h6>
-                    <p>Building the Backbone<br>of Your Brokerage</p>
-                </div>
-            </div>
         
-            <!-- blockchain cards -->
-            
-            <div class="slide slide-3" id="blockchain">
-                <div class="grid-wrap">
-                <div class="blockchain__content blockchain__content-small">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/crypto-expo-icon.png">
-                    <h6>Digital Exchange Setup</h6>
-                    <p>Building the Ideal<br>Exchange</p>
+                <!-- blockchain cards -->
+                
+                <div class="slide blockchain-slide">
+                        <div class="column-card">
+                            <div class="small-card">
+                                <img alt="picture" src="img/Services/BlockchainSolutions/crypto-expo-icon.png">
+                                <h6>Digital Exchange Setup</h6>
+                                <p>Building the Ideal<br>Exchange</p>
+                            </div>
+                            <div class="small-card">
+                                <img alt="picture" src="img/Services/BlockchainSolutions/smart-contact-dev.png">
+                                <h6>Enterprise Blockchain<br>Development</h6>
+                                <p>Powering the Blockchain</p>
+                            </div>
+                        </div>                                
+                        <div class="content-card blockchain-big-card">
+                            <img alt="picture" src="img/Services/BlockchainSolutions/token-sale-logo.png">
+                            <h6>Token Sale Solutions</h6>
+                            <p>An Accelerator for Your<br>Token Sale Dreams</p>
+                        </div>
+                        <div class="content-card blockchain-big-card">
+                            <img alt="picture" src="img/Services/BlockchainSolutions/blk-chn-solicon.png">
+                            <h6>All Blockchain<br>Solutions</h6>
+                            <p>Access the World’s Most<br>Disruptive Technology</p>
+                        </div> 
+                        <div class="column-card">
+                            <div class="small-card">
+                                <img alt="picture" src="img/Services/BlockchainSolutions/exchnage-seq-icon.png">
+                                <h6>Token Sale CRM</h6>
+                                <p>360° Token Sale Management</p>
+                            </div>
+                            
+                            <div class="small-card">
+                                <img alt="picture" src="img/Services/BlockchainSolutions/listing-service-icon.png">
+                                <h6>Listing Services</h6>
+                                <p>Optimizing Successful<br>Token Sale and Secondary Listings</p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
-                <div class="blockchain__content blockchain__content-two">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/token-sale-logo.png">
-                    <h6>Token Sale Solutions</h6>
-                    <p>An Accelerator for Your<br>Token Sale Dreams</p>
-                </div>
-                <div class="blockchain__content blockchain__content-three">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/blk-chn-solicon.png">
-                    <h6>All Blockchain<br>Solutions</h6>
-                    <p>Access the World’s Most<br>Disruptive Technology</p>
-                </div>
-                <div class="blockchain__content blockchain__content-small">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/exchnage-seq-icon.png">
-                    <h6>Token Sale CRM</h6>
-                    <p>360° Token Sale Management</p>
-                </div>
-                <div class="blockchain__content blockchain__content-small">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/smart-contact-dev.png">
-                    <h6>Enterprise Blockchain<br>Development</h6>
-                    <p>Powering the Blockchain</p>
-                </div>
-                <div class="blockchain__content blockchain__content-small">
-                    <img alt="picture" src="img/Services/BlockchainSolutions/listing-service-icon.png">
-                    <h6>Listing Services</h6>
-                    <p>Optimizing Successful<br>Token Sale and Secondary Listings</p>
-                </div>
-            </div>
             </div>
        
             </div>

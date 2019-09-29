@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
 
+    align-items: center;
+
 }
 
-#tabs{
+.tabs{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 50px;
 
 }
 
@@ -21,6 +24,7 @@
     color: #444546;
     position: relative;
     z-index: 5;
+    border-bottom: 3px solid transparent;
 }
     
 .tab-title:hover {
@@ -30,35 +34,46 @@
 }
 
 
-.tab-active {
+.active-tab {
     font-weight: 600;
     cursor: pointer;
     border-bottom: 3px solid rgb(195, 32, 39);
 }
 
-.slide {
-    width: 100%;
-    height: auto;
+.tab-content {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%; 
+    width: 100%;  
+    height: auto;
+
+}
+
+.slide {
+    display: flex;
+    flex: 1 200px;
+    width: 90%;
+    height: auto;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    
 }
 
 
 .content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #C32027;
-    margin-right: 33px;
-    margin-top: 35px;
     background-color: #fff;
+    height: 330px;
+    margin-right: 35px;
+    
 }
 
-.liquidity__content {
-    width: 355px;
-    height: 335px;
-   
-}
+
 
 .content-card:hover {
     cursor: pointer;
@@ -69,8 +84,10 @@
 }
 
 .content-card img {
+    max-width: 90px;
     display: block;
-    margin: 50px auto 40px; 
+    margin-bottom: 15px;
+  
 }
 
 .content-card h6 {
@@ -79,25 +96,66 @@
     text-align: center;
     line-height: 1;
     font-family: elliot-bold;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+   
 }
 
 .content-card p {
+    font-family: elliot-regular;
     font-size: 16px;
     color: #454547;
     text-align: center;
     line-height: 1;
 }
 
+.column-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    height: 330px;
+    justify-content: space-between;
+}
 
-.brokerage__content {
+.liquidity-slide div {
+    width: 335px;
+}
+
+.brokerage-slide div {
+    width: 200px;
+}
+
+.blockchain-slide div {
+    width: 260px;
+}
+
+.small-card {
+    max-width: 100%;
+    width: 260px;
+    max-height: 160px;
+    border: 2px solid #C32027;
+
+}
+
+.show {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+/* .brokerage__content {
     width: 200px;
     height: 330px;
-} 
+}  */
 
 
 /* grid slide */
-.grid-wrap {
+/* .grid-wrap {
     display: grid;
     grid-template-columns: repeat(4, 260px);
     grid-template-rows: repeat(2, 160px);
@@ -170,10 +228,7 @@
     margin: auto;
 } 
 
-.hide {
+/* .hide {
     display: none;
-}
+} */ 
 
-.show {
-    display: flex;
-}
