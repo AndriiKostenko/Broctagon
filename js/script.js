@@ -1,13 +1,13 @@
 // mobile menu button
-document.querySelector('.btn-menu').addEventListener('click', function(e) {
-  e.preventDefault();
-  this.classList.toggle('active');
-}
-)
+let mobileMenu = document.querySelector('.btn-menu');
+mobileMenu && mobileMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.toggle('active');
+  }
+);
 
 
-
-// header fixed 
+// header fixed
 window.onscroll = function () {
   fixedHeader()
 };
@@ -22,7 +22,6 @@ function fixedHeader() {
     header.classList.remove("fixed");
   }
 }
-
 
 
 //changing maps
