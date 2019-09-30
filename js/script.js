@@ -159,3 +159,19 @@ function getMockData() {
     },
   ]
 }
+
+function styleCountriesForMobile() {
+  if (window.outerWidth < 1020) {
+    for (var childIndex = 0; childIndex < countries.length; childIndex++) {
+      countries[childIndex].style.opacity = 1;
+      let image = countries[childIndex].querySelector("img");
+      image.src = image.src.replace('flag-grey-icon', 'flag-icon');
+      let details = countries[childIndex].querySelector(".details");
+      details.style.display = "block";
+      let name = countries[childIndex].querySelector(".name");
+      name.style.backgroundColor = "#C32027";
+    }
+  }
+}
+
+styleCountriesForMobile();
