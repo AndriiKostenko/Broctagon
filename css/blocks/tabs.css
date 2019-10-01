@@ -6,11 +6,15 @@
 
 }
 
+.services h3{
+    margin-bottom: 25px;
+}
+
 .tabs{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     flex-wrap: wrap;
 }
 
@@ -69,13 +73,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: 2px solid #C32027;
     background-color: #fff;
     width: 23%;
     align-self: stretch;
     box-sizing: border-box;
     margin: 1%;
+    min-height: 350px;
+    justify-content: space-evenly;
 }
 
 .slide:last-child .content-card:first-child, .slide:last-child  .content-card:last-child{
@@ -100,6 +105,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .small-card:first-child {
