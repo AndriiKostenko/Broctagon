@@ -3,6 +3,7 @@ window.onload = function () {
 
   function showTabNameContent(event) {
     let tabIndex = event.target.dataset.tab;
+    if (!tabIndex) return;
     let tabTitles = document.querySelectorAll('.tab-title');
     for (let i = 0; i < tabTitles.length; i++) {
       if (i == tabIndex) {
