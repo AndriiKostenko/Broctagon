@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 50px;
-
+    flex-wrap: wrap;
 }
 
 .tab-title {
@@ -51,14 +51,17 @@
 }
 
 .slide {
-    display: flex;
     flex: 1 200px;
     width: 90%;
     height: auto;
     align-items: center;
     justify-content: center;
     display: none;
-    
+    flex-wrap: wrap;
+}
+
+.slide.liquidity-slide {
+    display: flex;
 }
 
 
