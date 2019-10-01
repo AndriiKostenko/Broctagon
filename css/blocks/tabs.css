@@ -1,0 +1,150 @@
+.services {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab-title {
+    display: block;
+    padding: 0 30px 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #444546;
+    position: relative;
+    z-index: 5;
+    border-bottom: 3px solid transparent;
+}
+    
+.tab-title:hover {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(195, 32, 39);
+
+}
+
+
+.active-tab {
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(195, 32, 39);
+}
+
+.tab-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%; 
+    width: 100%;  
+    height: auto;
+
+}
+
+.slide {
+    flex: 1 200px;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.slide.liquidity-slide {
+    display: flex;
+}
+
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C32027;
+    background-color: #fff;
+    width: 23%;
+    align-self: stretch;
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+.slide:last-child .content-card:first-child, .slide:last-child  .content-card:last-child{
+    border:0;
+}
+
+@media only screen and (max-width: 769px){
+    .content-card {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .small-card:first-child {
+        margin-bottom: 1%;
+    }
+}
+
+.small-card {
+    border: 2px solid #C32027;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-card:first-child {
+    margin-bottom: 15px;
+}
+
+.content-card:hover {
+    cursor: pointer;
+}
+
+.liquidity__content:last-child {
+    margin-right: 0;
+}
+
+.content-card img {
+    max-width: 90px;
+    display: block;
+    margin-bottom: 15px;
+  
+}
+
+.content-card h6 {
+    font-size: 18px;
+    color: #454547;
+    text-align: center;
+    line-height: 1;
+    font-family: elliot-bold;
+    margin-bottom: 15px;
+   
+}
+
+.content-card p {
+    font-family: elliot-regular;
+    font-size: 16px;
+    color: #454547;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.show {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
