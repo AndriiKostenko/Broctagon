@@ -513,8 +513,11 @@
 
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 770px){
 
+    .social-media-list:last-child {
+        margin-right: 0;
+    }
 
     .awards-list {
         flex-wrap: wrap;
