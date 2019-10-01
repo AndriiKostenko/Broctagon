@@ -97,6 +97,9 @@
     width: 100%;
     box-sizing: border-box;
     min-height: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .small-card:first-child {
@@ -136,14 +139,6 @@
     line-height: 1;
 }
 
-
-.liquidity-slide div {
-    width: 335px;
-}
-
-.brokerage-slide div {
-    width: 200px;
-}
 
 .show {
     display: flex;
