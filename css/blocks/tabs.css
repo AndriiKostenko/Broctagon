@@ -96,6 +96,10 @@
     .small-card:first-child {
         margin-bottom: 1%;
     }
+
+    .slide:last-child .content-card:first-child, .slide:last-child  .content-card:last-child{
+        min-height: 700px;
+    }
 }
 
 .small-card {
