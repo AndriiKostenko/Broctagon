@@ -512,3 +512,34 @@
     }
 
 }
+
+@media only screen and (max-width: 375px){
+
+
+    .awards-list {
+        flex-wrap: wrap;
+    }
+
+    .awards-list p {
+        font-size: 13px;
+    }
+
+
+
+    form input {
+        width: 100%;
+        margin-right: 0px;
+       
+    }
+
+    .form-item {
+        width: 100%;
+    }
+
+    .footer__wrap {
+        max-width: 90%;
+    }
+    .submit-button {
+        margin-top: 30px;
+    }
+}
