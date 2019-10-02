@@ -103,86 +103,56 @@
 
 .btn-menu {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 50px;
+  top: 20px;
   background-color: #fff;
-  overflow: hidden;
   margin: 0;
   padding: 0;
   cursor: pointer;
   border: none;
-  display: none;
+  text-align: center;
 }
 
-.btn-menu span::before,
-.btn-menu span::after,
 .btn-menu span {
   position: absolute;
-  top: 50%;
-  margin-top: 1px;
-  left: 50%;
-  margin-left: -18px;
+  left: 0;
   width: 35px;
   height: 2px;
   background-color: #000;
 }
 
-.btn-menu span::before,
-.btn-menu span::after {
-  content: "";
-  display: block;
-  transition: 0.5s;
+.middle {
+  margin-top: 10px;
 }
 
-.btn-menu span:before {
-  transform: translateY(-13px);
+.bottom {
+  margin-top: 20px;
 }
 
-.btn-menu span:after {
-  transform: translateY(10px);
+.middle.close {
+  display: none;
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
 }
 
-/*
-.btn-line span {
-    transition: background 0s, 0.3s;
+.top.close {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
 }
-
-.btn-line span::before,
-.btn-line span::after {
-    transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s;
+.bottom.close {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
 }
-
-.btn-line span::before {
-    transition-property: top, transform;
-}
-
-.btn-line span::after {
-    transition-property: bottom, transform;
-}
-
-.btn-line .active {
-    background-color: green;
-}
-
-.btn-line .active span {
-    background-color: none;
-}
-
-.btn-line .active span::before {
-    top: 0;
-    transform: rotate(-45deg);
-}
-
-.btn-line .active span::before {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-.btn-line .active span::before,
-.btn-line .active span::before {
-    transition-delay: 0s, 0.3s;
-}
-     */

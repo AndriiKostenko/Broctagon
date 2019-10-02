@@ -1,10 +1,10 @@
 // header fixed
-window.onscroll = function () {
-  fixedHeader()
+window.onscroll = function() {
+  fixedHeader();
 };
 
 let sticky = window.pageYOffset;
-let header = document.querySelector('.header');
+let header = document.querySelector(".header");
 
 function fixedHeader() {
   if (window.pageYOffset >= 1) {
@@ -14,6 +14,17 @@ function fixedHeader() {
   }
 }
 
+// mobile menu
+
+document.querySelector(".btn-menu").addEventListener("click", function() {
+  if (this.classList.contains("close")) {
+    this.classList.remove("close");
+    document.querySelector("#drop-menu").classList.remove(".mobile-menu-list");
+  } else {
+    this.classList.add("close");
+    document.querySelector("#drop-menu").classList.add(".mobile-active");
+  }
+});
 
 //changing maps
 
@@ -21,13 +32,13 @@ let countries = document.querySelectorAll(".country");
 
 function changeMap(mapFileName, index) {
   if (window.outerWidth < 1020) return;
-  document.querySelector(".map img").src = './img/Offices/maps/' + mapFileName;
+  document.querySelector(".map img").src = "./img/Offices/maps/" + mapFileName;
 
   for (var childIndex = 0; childIndex < countries.length; childIndex++) {
     if (index === childIndex) {
       countries[childIndex].style.opacity = 1;
       let image = countries[childIndex].querySelector("img");
-      image.src = image.src.replace('flag-grey-icon', 'flag-icon');
+      image.src = image.src.replace("flag-grey-icon", "flag-icon");
       let details = countries[childIndex].querySelector(".details");
       details.style.display = "block";
       let name = countries[childIndex].querySelector(".name");
@@ -35,7 +46,7 @@ function changeMap(mapFileName, index) {
     } else {
       countries[childIndex].style.opacity = 0.5;
       let image = countries[childIndex].querySelector("img");
-      image.src = image.src.replace('flag-icon', 'flag-grey-icon');
+      image.src = image.src.replace("flag-icon", "flag-grey-icon");
       let details = countries[childIndex].querySelector(".details");
       details.style.display = "none";
       let name = countries[childIndex].querySelector(".name");
@@ -55,30 +66,44 @@ function handleContactFormSubmit() {
   let otherContacts = form.elements["other contact"].value;
 
   //make API call
-  alert("Making API call on contact form submit with data: " + "\n" +
-    "First Name:" + firstName + "\n" +
-    "Last Name:" + lastName + "\n" +
-    "Email:" + email + "\n" +
-    "Company:" + company + "\n" +
-    "URL:" + url + "\n" +
-    "Service:" + service + "\n" +
-    "Other Contacts:" + otherContacts
+  alert(
+    "Making API call on contact form submit with data: " +
+      "\n" +
+      "First Name:" +
+      firstName +
+      "\n" +
+      "Last Name:" +
+      lastName +
+      "\n" +
+      "Email:" +
+      email +
+      "\n" +
+      "Company:" +
+      company +
+      "\n" +
+      "URL:" +
+      url +
+      "\n" +
+      "Service:" +
+      service +
+      "\n" +
+      "Other Contacts:" +
+      otherContacts
   );
   form.reset();
 }
 
 function refreshResearchTable() {
-
-  fetch('https://webapi.mt4.space:8443/price/all')
+  fetch("https://webapi.mt4.space:8443/price/all")
     .then(response => {
-      return response.json()
+      return response.json();
     })
     .then(data => {
       updateTable(data);
     })
     .catch(err => {
       console.log(err);
-    })
+    });
 }
 
 function refreshResearchTableUsedMockData() {
@@ -86,7 +111,7 @@ function refreshResearchTableUsedMockData() {
 }
 
 function findCurrencyData(data, currency) {
-  return data.find(function (element) {
+  return data.find(function(element) {
     return element["Symbol"].includes(currency);
   });
 }
@@ -110,54 +135,54 @@ setInterval(refreshResearchTableUsedMockData, 1000);
 function getMockData() {
   return [
     {
-      "Ask": (Math.random() + 1).toFixed(5),
-      "Bid": (Math.random() + 1).toFixed(5),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "EURUSD.ecn"
+      Ask: (Math.random() + 1).toFixed(5),
+      Bid: (Math.random() + 1).toFixed(5),
+      Spread: Math.random().toFixed(2),
+      Symbol: "EURUSD.ecn"
     },
     {
-      "Ask": (Math.random() + 1).toFixed(5),
-      "Bid": (Math.random() + 1).toFixed(5),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "GBPUSD.ecn"
+      Ask: (Math.random() + 1).toFixed(5),
+      Bid: (Math.random() + 1).toFixed(5),
+      Spread: Math.random().toFixed(2),
+      Symbol: "GBPUSD.ecn"
     },
     {
-      "Ask": (Math.random() * 1000).toFixed(3),
-      "Bid": (Math.random() * 1000).toFixed(3),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "USDJPY.ecn"
+      Ask: (Math.random() * 1000).toFixed(3),
+      Bid: (Math.random() * 1000).toFixed(3),
+      Spread: Math.random().toFixed(2),
+      Symbol: "USDJPY.ecn"
     },
     {
-      "Ask": (Math.random() * 10000).toFixed(3),
-      "Bid": (Math.random() * 10000).toFixed(3),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "BTCUSD.nx"
+      Ask: (Math.random() * 10000).toFixed(3),
+      Bid: (Math.random() * 10000).toFixed(3),
+      Spread: Math.random().toFixed(2),
+      Symbol: "BTCUSD.nx"
     },
     {
-      "Ask": (Math.random() * 1000).toFixed(3),
-      "Bid": (Math.random() * 1000).toFixed(3),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "ETHUSD.nx"
+      Ask: (Math.random() * 1000).toFixed(3),
+      Bid: (Math.random() * 1000).toFixed(3),
+      Spread: Math.random().toFixed(2),
+      Symbol: "ETHUSD.nx"
     },
     {
-      "Ask": (Math.random() + 1).toFixed(5),
-      "Bid": (Math.random() + 1).toFixed(5),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "XRPUSD.nx"
+      Ask: (Math.random() + 1).toFixed(5),
+      Bid: (Math.random() + 1).toFixed(5),
+      Spread: Math.random().toFixed(2),
+      Symbol: "XRPUSD.nx"
     },
     {
-      "Ask": (Math.random() * 10000).toFixed(3),
-      "Bid": (Math.random() * 10000).toFixed(3),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "XAUUSD.ecn"
+      Ask: (Math.random() * 10000).toFixed(3),
+      Bid: (Math.random() * 10000).toFixed(3),
+      Spread: Math.random().toFixed(2),
+      Symbol: "XAUUSD.ecn"
     },
     {
-      "Ask": (Math.random() * 10000).toFixed(3),
-      "Bid": (Math.random() * 10000).toFixed(3),
-      "Spread": (Math.random()).toFixed(2),
-      "Symbol": "NACUSD.c"
-    },
-  ]
+      Ask: (Math.random() * 10000).toFixed(3),
+      Bid: (Math.random() * 10000).toFixed(3),
+      Spread: Math.random().toFixed(2),
+      Symbol: "NACUSD.c"
+    }
+  ];
 }
 
 function styleCountriesForMobile() {
@@ -165,7 +190,7 @@ function styleCountriesForMobile() {
     for (var childIndex = 0; childIndex < countries.length; childIndex++) {
       countries[childIndex].style.opacity = 1;
       let image = countries[childIndex].querySelector("img");
-      image.src = image.src.replace('flag-grey-icon', 'flag-icon');
+      image.src = image.src.replace("flag-grey-icon", "flag-icon");
       let details = countries[childIndex].querySelector(".details");
       details.style.display = "block";
       let name = countries[childIndex].querySelector(".name");
