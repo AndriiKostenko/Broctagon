@@ -127,6 +127,20 @@
   background-color: #000;
 }
 
+.btn-menu.close .top{
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.btn-menu.close .middle{
+  display: none;
+}
+
+.btn-menu.close .bottom{
+  transform: rotate(-45deg);
+  top: -5px;
+}
+
 .middle {
   margin-top: 10px;
 }
