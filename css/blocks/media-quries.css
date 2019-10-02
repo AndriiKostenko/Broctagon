@@ -8,7 +8,7 @@
         font-weight: 400;
     }
 
-    .header__link {
+    .header_link {
         margin-right: 20px;
     }
 
@@ -23,11 +23,17 @@
       display: none;
     }
 
+    .header_logo {
+        margin-left: 20px;
+    }
 
 
 
 @media only screen and (max-width: 1020px){
     
+
+   
+
     /* ---------officess block--------------- */
         
     .wrap {
@@ -97,13 +103,7 @@
        
     }
 
-      .header__wrap {
-        flex-direction: row;
-        position: relative;
-        height: 70px;
-        max-height: 100%;
-        align-items: center;
-      }
+   
 
     .menu__list, .header_link {
       display: none;

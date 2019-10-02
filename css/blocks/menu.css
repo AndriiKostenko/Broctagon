@@ -8,6 +8,7 @@
   line-height: 66px;
   text-transform: uppercase;
   font-weight: 400;
+  height: 100%;
 }
 
 .menu__link {
@@ -33,7 +34,7 @@
   text-transform: uppercase;
   font-weight: 400;
   text-align: left;
-  /* margin-left: 35px; */
+  margin-right: 100px;
 }
 
 .menu__item {
@@ -97,7 +98,7 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 }
 
 /* ------MOBILE BUTTON------------------ */
@@ -107,14 +108,15 @@
   width: 35px;
   height: 35px;
   position: absolute;
-  right: 50px;
-  top: 20px;
+  right: 20px;
+  top: 25px;
   background-color: #fff;
   margin: 0;
   padding: 0;
   cursor: pointer;
   border: none;
   text-align: center;
+  display: none;
 }
 
 .btn-menu span {
