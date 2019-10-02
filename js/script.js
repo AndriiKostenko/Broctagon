@@ -19,10 +19,10 @@ function fixedHeader() {
 document.querySelector(".btn-menu").addEventListener("click", function() {
   if (this.classList.contains("close")) {
     this.classList.remove("close");
-    document.querySelector("#drop-menu").classList.remove(".mobile-menu-list");
+    document.querySelector("#drop-menu").classList.remove("mobile-active");
   } else {
     this.classList.add("close");
-    document.querySelector("#drop-menu").classList.add(".mobile-active");
+    document.querySelector("#drop-menu").classList.add("mobile-active");
   }
 });
 
