@@ -62,11 +62,17 @@
     align-items: center;
     justify-content: center;
     display: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .slide.liquidity-slide {
     display: flex;
+}
+
+.liquidity-slide > div {
+   min-width: 330px;
+    max-width: 100%;
+
 }
 
 
@@ -80,7 +86,8 @@
     align-self: stretch;
     box-sizing: border-box;
     margin: 1%;
-    min-height: 350px;
+    height: 350px;
+    min-height: 250px;
     justify-content: space-evenly;
 }
 
@@ -89,9 +96,15 @@
 }
 
 @media only screen and (max-width: 769px){
+    .slide {
+        flex-direction: column;
+        
+    }
+
     .content-card {
         width: 100%;
         margin-bottom: 1%;
+        height: 250px;
     }
     .small-card:first-child {
         margin-bottom: 1%;
@@ -106,7 +119,8 @@
     border: 2px solid #C32027;
     width: 100%;
     box-sizing: border-box;
-    min-height: 49%;
+    min-height: 250px;     
+    max-height: 49%;
     display: flex;
     flex-direction: column;
     align-items: center;
