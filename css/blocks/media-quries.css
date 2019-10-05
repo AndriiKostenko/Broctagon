@@ -465,7 +465,7 @@
 
 
 
-    /* -----------TABLE BLOCK */
+    /* -----------TABLE BLOCK------------ */
 
   
 
@@ -484,8 +484,25 @@
     }
 
 
+    /* -----TABS--------- */
+    /* .slide {
+        
+        width: 90%;
+        max-width: 700px;   
+        flex-direction: column; 
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
 
-   }
+    .content-card {
+        max-width: 700px;   
+        height: 250px;
+
+    } */
+
+   
 
 
 
@@ -640,3 +657,4 @@
         margin-top: 30px;
     }
 }
+   }
