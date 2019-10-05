@@ -88,8 +88,10 @@
   margin-right: 35px;
 }
 
-.big-card {
+.big-card:first-child {
+  width: auto;
   height: auto;
+  margin-right: 35px;
 }
 /* .slide.liquidity-slide {
     display: flex;
@@ -141,7 +143,7 @@
   }
 
   .small-card {
-    width: 700px;
+    min-width: 700px;
     max-width: 100%;
     min-width: 220px;
     height: 250px;
@@ -164,7 +166,7 @@
 .small-card {
   border: 2px solid #c32027;
   max-width: 100%;
-  /* width: 260px; */
+  width: 100%;
   box-sizing: border-box;
   min-height: 160px;
   display: flex;
@@ -209,7 +211,7 @@
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 /* .hide {
