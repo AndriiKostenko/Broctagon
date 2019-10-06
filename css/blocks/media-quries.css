@@ -36,10 +36,10 @@
 
     /* ---------officess block--------------- */
         
-    .wrap {
+    /* .wrap {
         max-width: 820px;
      
-    }
+    } */
     .map {
         display: none;
     }
@@ -302,7 +302,8 @@
     .tabs {
       flex-direction: column;
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: 20px;
+
     }
 
     .tab-title {
@@ -334,7 +335,7 @@
     .notice {
         max-width: 90%;
     }
-
+/* 
     .content-card {
       width: 715px;
       width: 100%;
@@ -346,7 +347,7 @@
 
     .column-card {
       height: auto;
-    }
+    } */
 
       /*---------------OFFICES-------------  */
 

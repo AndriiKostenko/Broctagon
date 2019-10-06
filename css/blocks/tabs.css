@@ -3,6 +3,7 @@
   flex-direction: column;
 
   align-items: center;
+  margin-bottom: 75px;
 }
 
 .services h3 {
@@ -14,16 +15,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
 .tab-title {
   display: block;
-  padding: 0 30px 20px;
+  padding: 0 30px;
   margin: 0 10px;
   box-sizing: border-box;
   font-size: 20px;
+  line-height: 50px;
   text-transform: uppercase;
   color: #444546;
   position: relative;
@@ -70,6 +72,10 @@
   margin-right: 35px;
 }
 
+.liquidity-slide > div:last-child {
+  margin-right: 0;
+}
+
 .brokerage-slide > div {
   width: 200px;
   max-width: 100%;
@@ -77,6 +83,10 @@
   height: 330px;
   min-height: auto;
   margin-right: 35px;
+}
+
+.brokerage-slide > div:last-child {
+  margin-right: 0;
 }
 .blockchain-slide .content-card {
   width: 260px;
@@ -88,27 +98,64 @@
   margin-right: 35px;
 }
 
+.big-card {
+  width: 260px;
+  max-width: 100%;
+  min-width: 150px;
+  height: auto;
+}
+
 .big-card:first-child {
-  width: auto;
+  width: 260px;
+  max-width: 100%;
+  min-width: 150px;
   height: auto;
   margin-right: 35px;
 }
-/* .slide.liquidity-slide {
-    display: flex;
-} */
+
+.small-card {
+  border: 2px solid #c32027;
+  max-width: 100%;
+  width: 260px;
+  min-width: 150px;
+  box-sizing: border-box;
+  min-height: 160px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.small-card:first-child {
+  margin-bottom: 15px;
+}
+
+.small-card img {
+  width: 60px;  
+} 
+
+.small-card h6 {
+  font-size: 15px;  
+  color: #444546; 
+}
+
+
+.small-card p {
+  font-size: 13px;   
+  color: #444546;
+}
 
 .content-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid #c32027;
   background-color: #fff;
-  /* width: 23%; */
   align-self: stretch;
   box-sizing: border-box;
-  /* margin: 1%;
-    min-height: 350px;
-    justify-content: space-evenly; */
 }
 
 .slide:last-child .content-card:first-child,
@@ -116,68 +163,7 @@
   border: 0;
 }
 
-@media only screen and (max-width: 769px) {
-  .tab-title:active {
-    cursor: pointer;
-    border-bottom: 3px solid rgb(195, 32, 39);
-  }
-
-  .slide {
-    flex-direction: column;
-  }
-
-  .liquidity-slide > div,
-  .brokerage-slide > div,
-  .blockchain-slide .content-card {
-    width: 700px;
-    max-width: 100%;
-    min-width: 220px;
-    height: 250px;
-    min-height: auto;
-  }
-
-  .big-card {
-    width: 700px;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .small-card {
-    min-width: 700px;
-    max-width: 100%;
-    min-width: 220px;
-    height: 250px;
-  }
-
-  .content-card {
-    width: 100%;
-    margin-bottom: 1%;
-  }
-  .small-card:first-child {
-    margin-bottom: 1%;
-  }
-
-  .slide:last-child .content-card:first-child,
-  .slide:last-child .content-card:last-child {
-    min-height: 700px;
-  }
-}
-
-.small-card {
-  border: 2px solid #c32027;
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.small-card:first-child {
-  margin-bottom: 15px;
-}
+/*  */
 
 .content-card:hover {
   cursor: pointer;
@@ -190,7 +176,7 @@
 .content-card img {
   max-width: 90px;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .content-card h6 {
@@ -217,3 +203,110 @@
 /* .hide {
   display: none;
 } */
+
+
+@media only screen and (min-width: 1030px) and (max-width: 1125px) {
+  .wrap {
+    width: 90%;
+  }
+  .content-card h6 {
+    font-size: 18px;
+  }
+
+  .content-card p {
+    font-size: 16px;
+  }
+
+  .small-card h6 {
+    font-size: 16px;
+  } 
+
+  .small-card p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 960px){
+  .tab-title {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+  .wrap {
+    width: 90%;
+  }
+  
+  .tab-title {
+    margin: 0 0 20px;
+    border: 2px solid rgb(195, 32, 39);
+    color:  rgb(195, 32, 39);
+  }
+
+  .tab-title:active {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(195, 32, 39);
+  }
+
+  .active-tab {
+    background-color: #f4524d; 
+    color: #fff;
+    font-weight: 400;
+  }
+ 
+
+  .slide {
+    flex-direction: column;
+  }
+
+  .liquidity-slide > div,
+  .brokerage-slide > div,
+  .blockchain-slide .content-card {
+    width: 700px;
+    max-width: 100%;
+    min-width: 220px;
+    height: 250px;
+    min-height: auto;
+  }
+
+  .big-card,
+  .big-card:first-child {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .small-card {
+    min-width: 700px;
+    max-width: 100%;
+    min-width: 220px;
+    height: 250px;
+  }
+
+  .small-card img {
+    width: 90px;  
+  } 
+
+  .content-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .small-card:first-child {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .small-card {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .slide:last-child .content-card:first-child,
+  .slide:last-child .content-card:last-child {
+    min-height: 700px;
+  }
+}
