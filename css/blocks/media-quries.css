@@ -26,7 +26,7 @@
     .header_logo {
         margin-left: 20px;
     }
-
+}
 
 
 @media only screen and (max-width: 1020px){
@@ -94,7 +94,7 @@
       display: none;
     }
   
-
+}
     
 
 @media only screen and (max-width: 992px){
@@ -221,7 +221,7 @@
   
   
   
-}  
+
     
 /* -------------TABLE BLOCK---------------------- */
 
@@ -249,7 +249,7 @@
 
 
 
-        @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
 
     
      
@@ -289,7 +289,7 @@
     /* ------------SOLUTIONS BLOCK--------------- */
 
     .solutions__content {
-        max-width: 80%;
+        width: 100%;
         margin: 0;
     }
 
@@ -323,10 +323,10 @@
       -o-transition: all 0.2s;
     }
 
-    .tab-title:hover {
+    /* .tab-title:hover {
       background-color: #f4524d;
       color: #fff;
-    }
+    } */
 
     .tab-comtent {
       width: 90%;
@@ -395,11 +395,17 @@
 
      .footer__left p {
         font-size: 15px;
+        text-align: justify;
     }
 
     .awards-list,
     .social-media-list {
         justify-content: center;
+    }
+
+    .awards-list p {
+        text-align: center;
+
     }
 
     .amazon {
@@ -417,8 +423,6 @@
 
     }
   
-  
-
     .footer__bottom {
         display: flex;
         flex-direction: column;
@@ -427,6 +431,10 @@
         width: 100%;
     }
 
+    .footer__logo {
+        margin-bottom: 50px;
+    }
+ 
     .footer__menu,
     .footer__menu-list {
         width: 100%;
@@ -452,11 +460,11 @@
 
     }
 }
-}
+
    @media only screen and (max-width: 768px){ 
 
  .wrap {
-        max-width: 600px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -504,13 +512,13 @@
     } */
 
    
-
+   }
 
 
    @media only screen and (max-width: 680px){
 
     .wrap {
-        max-width: 600px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -520,8 +528,9 @@
 
 /* --------------TABLE BLOCK------------------- */
     .reserch_table {
-        overflow-y: scroll;       
+        overflow-y: scroll;   
         height: 370px;   
+     
     }
 
     .t-header div{
@@ -544,14 +553,12 @@
     .market_research__button {
     max-width: 90%;
     border-radius: 13px;
-    
-
 }
 
 /* ----------------SOLUTIONS BLOCK-------------- */
 
 .solutions__content {
-    width: 90%;
+    width: 100%;
     margin: 0;
     text-align: center;
 }
@@ -559,7 +566,7 @@
 /* ---------------------OFFICES BLOCK---------------- */
 
 .offices__content{
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin: 0 0 75px;;
 }
@@ -658,4 +665,24 @@
         margin-top: 30px;
     }
 }
+   
+
+   @media only screen and (max-width: 414px) {
+       h2 {
+           font-size: 23px;
+       }
+      
+       .solutions__content h3,
+       .offices__content h3, 
+       .services h3 {
+        font-size: 21px;
+    }
+
+    .solutions__content p, 
+    .offices__content p {
+    width: 100%;
+    text-align: justify;
+
+    }
+
    }

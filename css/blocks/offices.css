@@ -1,7 +1,6 @@
 .offices { 
     width: 100%;
     height: auto;
-    max-height: 1015px;
     display: flex;
     flex-direction: column;
 

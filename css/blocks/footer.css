@@ -42,6 +42,9 @@ footer p {
   flex-direction: row;
 }
 
+.awards-list p {
+  text-align: center;
+}
 .awards-list-item {
   list-style-type: none;
   display: flex;
@@ -182,6 +185,9 @@ form legend {
   background-color: #f5f8fa;
   padding: 9px 10px;
   margin: 10px 0 18px 0;
+  line-height: 22px;
+  color: #33475b;
+  font-size: 16px;
 }
 
 .form-select option,
@@ -259,6 +265,7 @@ textarea {
   width: 250px;
   height: auto;
   margin-right: 105px;
+
 }
 
 .footer__bottom-right {

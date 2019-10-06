@@ -9,6 +9,8 @@
 .services h3 {
   margin-bottom: 25px;
   text-align: center;
+  color: #444546;
+
 }
 
 .tabs {
@@ -243,7 +245,7 @@
   .tab-title {
     margin: 0 0 20px;
     border: 2px solid rgb(195, 32, 39);
-    color:  rgb(195, 32, 39);
+    color: rgb(195, 32, 39);
   }
 
   .tab-title:active {
@@ -251,10 +253,16 @@
     border-bottom: 3px solid rgb(195, 32, 39);
   }
 
-  .active-tab {
-    background-color: #f4524d; 
+  .tab-title:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(195, 32, 39);
+  }
+
+   .active-tab {
+    background-color: rgb(195, 32, 39);
     color: #fff;
     font-weight: 400;
+    border: 2px solid rgb(195, 32, 39);
   }
  
 

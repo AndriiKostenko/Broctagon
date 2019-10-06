@@ -125,6 +125,8 @@
   width: 35px;
   height: 2px;
   background-color: #000;
+  transition: all 0.3s ease 0s;
+
 }
 
 .btn-menu.close .top{
