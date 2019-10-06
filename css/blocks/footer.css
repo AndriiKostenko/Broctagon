@@ -143,6 +143,7 @@ form input {
   margin: 10px 30px 0 0;
   background-color: #fff;
   font-size: 16px;
+  padding: 0 15px;
 }
 
 #last-name,
@@ -205,6 +206,7 @@ textarea {
   height: 40px;
   background-color: #fff;
   margin: 10px 0 18px 0;
+  padding: 10px 15px;
 }
 
 .consent {
