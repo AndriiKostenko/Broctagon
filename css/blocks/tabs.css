@@ -322,3 +322,15 @@
     min-height: 700px;
   }
 }
+
+
+@media only screen and (max-width: 320px) {
+  .tab-title{
+      font-size: 19px;
+  }
+
+  .label-wrap{
+    min-width: 270px;
+  }
+
+}
